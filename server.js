@@ -6,7 +6,8 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:3000"
+ // origin: "http://localhost:3000"
+    origin: "https://github.com/jimimendapara/node-backend.git"
 };
 
 app.use(cors(corsOptions));
