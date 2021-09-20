@@ -8,7 +8,8 @@ const app = express();
 var corsOptions = {
  // origin: "http://localhost:3000"
    // origin: "https://jimimendapara.github.io/creadit-card-manager"
-  origin: "http://52.62.90.174"
+  origin: "http://52.62.90.174",
+  origin: "http://ec2-52-62-90-174.ap-southeast-2.compute.amazonaws.com",
 };
 
 app.use(cors(corsOptions));
