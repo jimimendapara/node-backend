@@ -7,7 +7,7 @@ const app = express();
 
 var corsOptions = {
  // origin: "http://localhost:3000"
-    origin: "https://github.com/jimimendapara/node-backend.git"
+    origin: "https://jimimendapara.github.io/creadit-card-manager/"
 };
 
 app.use(cors(corsOptions));
@@ -31,7 +31,7 @@ const db = require("./app/models");
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome to Jimi's application." });
 });
 
 require("./app/routes/card.routes")(app);
