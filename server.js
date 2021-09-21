@@ -1,15 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+require('dotenv').config("./.env");
 
 
 const app = express();
 
 var corsOptions = {
- // origin: "http://localhost:3000"
-   // origin: "https://jimimendapara.github.io/creadit-card-manager"
-  origin: "http://52.62.90.174",
-  origin: "http://ec2-52-62-90-174.ap-southeast-2.compute.amazonaws.com",
+  origin: ['ORIGIN_URL'],
 };
 
 app.use(cors(corsOptions));

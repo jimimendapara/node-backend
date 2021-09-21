@@ -1,9 +1,9 @@
 module.exports = {
-    HOST: "creditcard.c9dmvdty4qbu.ap-southeast-2.rds.amazonaws.com",
-    USER: "jimimendapara",
-    PASSWORD: "mendapara123",
-    DB: "testdb",
-    dialect: "mysql",
+    HOST: process.env['DB_HOST'],
+    USER: process.env['DB_USER'],
+    PASSWORD: process.env['DB_PASSWORD'],
+    DB: process.env['DB_DATABASENAME'],
+    dialect: process.env['DB_DYLECT'],
     pool: {
       max: 5,
       min: 0,
